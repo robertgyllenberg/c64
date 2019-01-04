@@ -1,0 +1,58 @@
+;********************************
+;* encode333.asm                *
+;* blame Robert Gyllenberg 2019 *
+;* Standard disclaimer:         *
+;* "AS IS WITHOUT WARRANTY"     *
+;********************************
+,c400 a9 28    lda #$28     ;Kohdeosoitteet (BASIC-ohjelmassa)
+,c402 85 fb    sta $fb
+,c404 a9 08    lda #$08
+,c406 85 fc    sta $fc
+,c408 a9 00    lda #$00     ;Konekieliohjelman lähdeosoite
+,c40a 85 fd    sta $fd
+,c40c a9 c0    lda #$c0
+,c40e 85 fe    sta $fe
+,c410 a0 00    ldy #$00
+,c412 b1 fd    lda ($fd),y  ;Lue yksi tavu kerrallaan
+,c414 48       pha          ;Laita jemmaan
+,c415 4a       lsr          ;Ylempi nybble ensin
+,c416 4a       lsr
+,c417 4a       lsr
+,c418 4a       lsr
+,c419 09 40    ora #$40     ;Koodaa ASCII-merkiksi alueella @ABC...MNO
+,c41b 91 fb    sta ($fb),y  ;Tallenna eka merkki
+,c41d c8       iny          ;Siirry seuraavaan paikkaa BASIC-muistissa
+,c41e 68       pla          
+,c41f 29 0f    and #$0f     ;Sitten alempi nybble...
+,c421 09 40    ora #$40     ;...ja sama koodaus/tallennus
+,c423 91 fb    sta ($fb),y
+,c425 a5 fb    lda $fb
+,c427 18       clc
+,c428 69 01    adc #$01     ;Edetään merkki kerrallaan...
+,c42a 85 fb    sta $fb
+,c42c a5 fc    lda $fc
+,c42e 69 00    adc #$00
+,c430 85 fc    sta $fc
+,c432 c0 25    cpy #$25     ;...ja toistetaan sisempi silmukka, kunnes
+,c434 d0 dc    bne $c412    ; BASIC-rivi tulee merkkiä vaille täyteen
+,c436 a5 fd    lda $fd      ; Jatketaan ulommassa silmukassa
+,c438 18       clc
+,c439 69 25    adc #$25     ; Konekieliohjelmassa 37 ($25) tavua
+,c43b 85 fd    sta $fd      ; vastaa tuplasti ASCII-merkkejä
+,c43d a5 fe    lda $fe      ; BASIC-rivien välinen offset muistissa on
+,c43f 69 00    adc #$00     ; 80 ($50), josta vähennetään 37 
+,c441 85 fe    sta $fe
+,c443 a5 fb    lda $fb
+,c445 18       clc          ; 
+,c446 69 2b    adc #$2b     ; Lisätään siis 80-37 = 43 ($2B)...
+,c448 85 fb    sta $fb      ; 
+,c44a a5 fc    lda $fc
+,c44c 69 00    adc #$00
+,c44e 85 fc    sta $fc
+,c450 c9 0a    cmp #$0a     ; 
+,c452 90 bc    bcc $c410    ;...ja toistetaan kunnes 
+,c454 a5 fb    lda $fb      ; 
+,c456 c9 d3    cmp #$d3     ;
+,c458 90 b6    bcc $c410    ;kaikki rivit on kirjoitettu
+,c45a 60       rts
+
