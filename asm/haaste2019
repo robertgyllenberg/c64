@@ -36,7 +36,7 @@ Kaikessa työssä tulee noudattaa hyvää tapaa ja mikäli oman työnsä perusta
 
 4.3 Ohjelman on kokonaisuudessaan oltava listattavissa LIST-komennolla ja sen tulee mahtua kerralla yhteen ruutuun siten, että viimeisen rivin alle mahtuu vielä hopute "READY." ja sen alle vilkkuva kursori, ilman että ohjelman alkuosa vierii pois näkyvistä.
 
-4.4 Ohjelman on oltava ladattavissa vakiolevyasemasta kylmäkäynnistyksen jälkeen esimerkiksi LOAD"nimi",8 ja sen tulee käynnistyä manuaalisesti selkeästi ilmoitetulla yksittäisellä käskyllä, esim. RUN n, GOTO n tai SYS a
+4.4 Ohjelman on oltava ladattavissa vakiolevyasemasta kylmäkäynnistyksen jälkeen esimerkiksi LOAD"nimi",8 ja sen tulee käynnistyä manuaalisesti selkeästi ilmoitetulla yksittäisellä käskyllä, esim. RUN, RUN n, GOTO n tai SYS a, missä n on ohjelmassa esiintyvä rivinumero tai a on ohjelmaan kuuluva muistiosoite. Käynnistyskäskyn perään ei saa kirjoittaa ylimääräisiä parametreja eikä muita merkkejä.
 
 4.5 Ohjelma ei saa olla riippuvainen muusta datasta tai koodista kuin mitä enintään 23 rivin listauksessa näkyy, lukuun ottamatta mitä koneen vakiokokoonpanon ROM- ja RAM- muisteista löytyy heti käynnistyksen jälkeen tai mitä nuo 23 näkyvää riviä kykenee itse muistiin tuottamaan ohjelman käynnistyttyä.
 
