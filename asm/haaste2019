@@ -1,0 +1,49 @@
+Haastan kaikki, niin uudet kuin vanhat, Commodore-64 -käyttäjät leikkimieliseen kilpailuun, jonka puitteet juontavat juurensa FB-ryhmän Commodore Finland ( https://www.facebook.com/groups/927335620622050/ ) vuotuisista BASIC-kilpailuista (enintään 23 nettoriviä koodia, että mahtuu listattuna yhteen ruudulliseen), mutta sillä muunnoksella, että ohjelmassa saa vapaasti käyttää konekielikäskyjä ja -kutsuja.
+
+Tehtävän luonteesta johtuen, kilpailu jakaantuu kahteen osaan: a) koodin esitystapa ja b) varsinainen sovellus
+
+SÄÄNNÖT (alustavat säännöt 5.1.2019 "lausuntokierroksella" FB-ryhmässä 12.1.2019 saakka)
+
+1. Osallistuminen ja ilmoittautuminen
+
+Kilpailu on avoin kaikille ja siihen ilmoittaudutaan tavalla, josta ilmoitetaan myöhemmin FB-ryhmässä Commodore Finland
+https://www.facebook.com/groups/927335620622050/ (jäljempänä tekstissä FB-ryhmä)
+
+2. Töiden arviointi ja palkinnot
+
+Työt arvioidaan FB-ryhmän sisällä siten että kokonaisuuden lisäksi rankataan erilaisten osatavoitteiden mukaan.
+Parhaiden sovellusten esittäjille jaetaan palkintoina vähäarvoista retrokamaa, josta ilmoitetaan loppukesästä/alkusyksyllä kun kilpailun jälkimmäinen osa alkaa...
+
+3. Aikataulu ja töiden julkisuus
+
+Kilpailu käydään kahdessa osassa: a) koodin esitystapa ja b) varsinainen sovellus
+
+a) Koodin esitystapa 4.1. -- 31.5.2019
+Koodin esitystapaa käsittelevät työt voi ilmoittaa sitä mukaan kuin valmistuvat ja ne julkaistaan samantien ellei osallistuja sitä ole nimenomaan kieltänyt.
+
+Lähtökohtaisesti kilpailu käydään avoimen lähdekoodin hengessä ja kannustetaan hyödyntämään hyviksi todettuja menetelmiä ja soveltamaan sekä jatkojalostamaan muiden ideoita vielä paremman lopputuloksen saavuttamiseksi. Osallistuja voi (niin halutessaan) ilmoittaa ettei hänen työtään saa julkaista ennen kilpailun a)-vaiheen päättymistä.
+
+b) Varsinainen sovellus 1.11 -- 30.11.2019 
+Sovellusohjelmia voi ilmoittaa marraskuun aikana sähköpostiin tai asiointipalveluun, joka ilmoitetaan kun tämän vaiheen aika lähestyy. Sovellukset julkaistaan ja niiden arviointi alkaa vasta palautusajan päätyttyä.
+
+Kaikessa työssä tulee noudattaa hyvää tapaa ja mikäli oman työnsä perustaa toisen tekemään työhön, maininta siitä kenen työhön perustuu, mikä on oman kontribuution osuus ja millä tavalla se on oleellisesti erilainen tai parempi.
+
+4. Teknillisluontoiset säännöt
+
+4.1 Tavoitteena on kirjoittaa sovellusohjelma, joka toimii normaalilla CBM-64 tietokoneella sellaisenaan ilman asennettuja rauta- tai softapuolen laajennuksia tai vaihtoehtoisesti tällaista laitekokoonpanoa emuloivalla ohjelmistolla, johon on asennettu vakio ROM-imaget (KERNAL-, BASIC- ja CHAR-) sekä tarvittaessa levyaseman firmware (1541-).
+
+4.2 Ohjelman on oltava syötettävissä tietokoneeseen sen oman näppäimistön avulla heti "kylmäkäynnistyksen" jälkeisessä tilassa ja olla tallennettavissa perinteiseen massamuistiin komennolla SAVE"nimi" (kasetille) tai SAVE"nimi",n missä nimi on hyväksyttävä tiedostonimi ja n on levyaseman asematunnus.
+
+4.3 Ohjelman on kokonaisuudessaan oltava listattavissa LIST-komennolla ja sen tulee mahtua kerralla yhteen ruutuun siten, että viimeisen rivin alle mahtuu vielä hopute "READY." ja sen alle vilkkuva kursori, ilman että ohjelman alkuosa vierii pois näkyvistä.
+
+4.4 Ohjelman on oltava ladattavissa vakiolevyasemasta kylmäkäynnistyksen jälkeen esimerkiksi LOAD"nimi",8 ja sen tulee käynnistyä manuaalisesti selkeästi ilmoitetulla yksittäisellä käskyllä, esim. RUN n, GOTO n tai SYS a
+
+4.5 Ohjelma ei saa olla riippuvainen muusta datasta tai koodista kuin mitä enintään 23 rivin listauksessa näkyy, lukuun ottamatta mitä koneen vakiokokoonpanon ROM- ja RAM- muisteista löytyy heti käynnistyksen jälkeen tai mitä nuo 23 näkyvää riviä kykenee itse muistiin tuottamaan ohjelman käynnistyttyä.
+
+4.6 Koneeseen kirjoitetun tai massamuistista ladatun ohjelman tulee olla kokonaisuudessaan sellainen, että sen eheys ja toimivuus säilyy, kun näppäillään <home> kerran ja <return> toistetusti.
+
+Edellä mainituilla säännöillä on haluttu sulkea pois erilaiset kikkailut, joissa hyödynnetään ohjelmakoodin latautumista (tarkoituksella tai sivuvaikutuksena) nolla-sivun vektoreihin, kasetti- tai näppäinpuskuriin, näyttömuistiin tai muuhun ohjelmamuistiin, mikä antaisi oikeudettoman kilpailuedun siihen nähden, että kirjoitetaan aidosti tiivistä ja käsin optimoitua ohjelmakoodia.
+
+Kokkolassa 1.5.2019 
+Robert Gyllenberg
+
