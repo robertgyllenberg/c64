@@ -38,7 +38,7 @@ Kaikessa työssä tulee noudattaa hyvää tapaa ja mikäli oman työnsä perusta
 
 4.4 Ohjelman on oltava ladattavissa vakiolevyasemasta kylmäkäynnistyksen jälkeen esimerkiksi LOAD"nimi",8 ja sen tulee käynnistyä manuaalisesti selkeästi ilmoitetulla yksittäisellä käskyllä, esim. RUN, RUN n, GOTO n tai SYS a, missä n on ohjelmassa esiintyvä rivinumero tai a on ohjelmaan kuuluva muistiosoite. Käynnistyskäskyn perään ei saa kirjoittaa ylimääräisiä parametreja eikä muita merkkejä.
 
-4.5 Ohjelma ei saa olla riippuvainen muusta datasta tai koodista kuin mitä enintään 23 rivin listauksessa näkyy, lukuun ottamatta mitä koneen vakiokokoonpanon ROM- ja RAM- muisteista löytyy heti käynnistyksen jälkeen tai mitä nuo 23 näkyvää riviä kykenee itse muistiin tuottamaan ohjelman käynnistyttyä.
+4.5 Ohjelma ei saa olla riippuvainen muusta datasta tai koodista kuin mitä enintään 23 rivin listauksessa näkyy, lukuun ottamatta mitä koneen vakiokokoonpanon ROM- ja RAM- muisteista löytyy heti käynnistyksen jälkeen tai mitä nuo enintään 23 ohjelmariviä kykenevät itse muistiin tuottamaan ohjelman käynnistyttyä.
 
 4.6 Koneeseen kirjoitetun tai massamuistista ladatun ohjelman tulee olla kokonaisuudessaan sellainen, että sen eheys ja toimivuus säilyy, kun näppäillään <home> kerran ja <return> toistetusti.
 
@@ -46,6 +46,6 @@ Kaikessa työssä tulee noudattaa hyvää tapaa ja mikäli oman työnsä perusta
 
 Edellä mainituilla säännöillä on haluttu sulkea pois erilaiset kikkailut, joissa hyödynnetään ohjelmakoodin latautumista (tarkoituksella tai sivuvaikutuksena) nolla-sivun vektoreihin, kasetti- tai näppäinpuskuriin, näyttömuistiin tai muuhun ohjelmamuistiin, mikä antaisi oikeudettoman kilpailuedun siihen nähden, että kirjoitetaan aidosti tiivistä ja käsin optimoitua ohjelmakoodia.
 
-Kokkolassa 1.5.2019 
+Kokkolassa 5.1.2019 
 Robert Gyllenberg
 
