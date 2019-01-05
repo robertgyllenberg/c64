@@ -42,6 +42,8 @@ Kaikessa työssä tulee noudattaa hyvää tapaa ja mikäli oman työnsä perusta
 
 4.6 Koneeseen kirjoitetun tai massamuistista ladatun ohjelman tulee olla kokonaisuudessaan sellainen, että sen eheys ja toimivuus säilyy, kun näppäillään <home> kerran ja <return> toistetusti.
 
+4.7 Epävirallisten opkoodien (http://www.ffd2.com/fridge/docs/6502-NMOS.extra.opcodes) käyttö on sallittu omalla vastuulla.
+
 Edellä mainituilla säännöillä on haluttu sulkea pois erilaiset kikkailut, joissa hyödynnetään ohjelmakoodin latautumista (tarkoituksella tai sivuvaikutuksena) nolla-sivun vektoreihin, kasetti- tai näppäinpuskuriin, näyttömuistiin tai muuhun ohjelmamuistiin, mikä antaisi oikeudettoman kilpailuedun siihen nähden, että kirjoitetaan aidosti tiivistä ja käsin optimoitua ohjelmakoodia.
 
 Kokkolassa 1.5.2019 
